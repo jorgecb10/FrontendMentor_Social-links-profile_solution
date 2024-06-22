@@ -1,0 +1,112 @@
+:root {
+    --primario : hsl(75, 94%, 57%);
+    --blanco : hsl(0, 0%, 100%);
+    --blancoTransparente : hsla(0, 0%, 100%, 0.822);
+    --gris : hsl(0, 0%, 20%);
+    --grisOscuro : hsl(0, 0%, 12%);
+    --negro : hsl(0, 0%, 8%);
+
+    --fontSizeBody : 1.4rem;
+
+    --fuente : 'inter', san-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    font-size: var(--fontSizeBody);
+    font-family: var(--fuente);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--negro);
+}
+
+/* globales */
+.contenedor {
+    max-width: 45rem;
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* contenido */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grisOscuro);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+}
+.contenido img {
+    width: 10rem;
+    border-radius: 50%;
+}
+.contenido h1 {
+    color: var(--blanco);
+    margin: 2rem 0 0;
+}
+.contenido h3 {
+    color: var(--primario);
+    font-weight: 600;
+    margin: 0;
+}
+.contenido p {
+    font-weight: 400;
+    color: var(--blancoTransparente);
+    margin: 2rem 0;
+}
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.enlace {
+    margin-bottom: 1.5rem;
+    background-color: var(--gris);
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 600;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    border-radius: 1rem;
+}
+.enlace:last-of-type {
+    margin-bottom: 0;
+}
+.enlace:hover {
+    background-color: var(--primario);
+    color: var(--negro);
+}
+
+/* attribution */
+.attribution {
+    text-align: center;
+    font-weight: 600;
+    color: var(--blanco);
+    padding: 2rem 2.5rem 0 2.5rem;
+}
+.attribution a {
+    color: var(--primario);
+    text-decoration: none;
+}
